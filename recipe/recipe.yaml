@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.0"
+  version: "0.3.0"
 
 package:
   name: dau-sim
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dau-sim/dau_sim-${{ version }}.tar.gz
-  sha256: cb548b4dd9174af31aeebb6ea67c6bc43b6e66529d4d9bb1c5d951cc7256bb05
+  sha256: fee7329025671d88b23319b51c34fb6092cacc85256fe602c4becf79bc4c72d9
 
 build:
   number: 0
@@ -22,17 +22,19 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatch-js
     - hatchling
     - pip
-    - pnpm
   run:
     - python >=${{ python_min }}
     - amaranth
+    - ccflow >=0.8.5
     - csp
+    - hydra-core
+    - omegaconf
+    - pydantic
     - pyslang
     - rich
-    - typer
+    - typer >=0.9.0
 
 tests:
   - python:
