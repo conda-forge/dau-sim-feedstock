@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.1"
+  version: "0.4.0"
 
 package:
   name: dau-sim
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dau-sim/dau_sim-${{ version }}.tar.gz
-  sha256: 04523263d93c1d0366c74b9dde2d2f3343353f34c36c193b751f2c6fe5b75d55
+  sha256: aaf08ce65dae2483102334b95a19a4cc25995ab21c4cf0cdf9a2b291da85c52e
 
 build:
   number: 0
